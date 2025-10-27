@@ -9,7 +9,7 @@ e = num % 10
 
 answer = e * 10000 + d * 1000 + c * 100 + b * 10 + a
 
-print(answer)
+print("Результат:", answer)
 
 # variant 5  #Сподіваюсь що хоть це підійде
 import math
@@ -24,7 +24,7 @@ rev += (n // 100 % 10) * int(math.pow(10, digits - 3))
 rev += (n // 1000 % 10) * int(math.pow(10, digits - 4))
 rev += (n // 10000 % 10) * int(math.pow(10, digits - 5))
 
-print(rev)
+print("Результат:", rev)
 
 #Варінт 1
 #s = int(input("Введіть будь ласка ціле число :"))
