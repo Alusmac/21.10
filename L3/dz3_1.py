@@ -1,9 +1,21 @@
-lis = [1, 2, 3, 4, 5, 6] # [[1, 2, 3], [4, 5, 6]]
-#lis = [1, 2, 3] # [[1, 2], [3]]
-#lis= [1, 2, 3, 4, 5] # [[1, 2, 3], [4, 5]]
-#lis= [1] # [[1], []]
-#lis = [] # [[], []]
-di = len(lis) // 2
-list1 = lis[:di]
-list2 = lis[di:]
-print(list1,
+a = float(input("Введіть перше число: "))
+znak = input("Введіть дію яку треба зробити (+,-,*,/) : ")
+b = float(input("Введіть друге число: "))
+
+if znak == '+':
+    res = a + b
+elif znak == '-':
+    res = a - b
+elif znak == '*':
+    res = a * b
+elif znak == '/':
+    if b == 0:
+          print("Неможна поділити на нуль")
+          res = None
+    else:
+           res = a / b
+if res is not None:
+    print("Буде:", res)
+
+
+
