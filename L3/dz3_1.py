@@ -10,10 +10,10 @@ elif znak == '*':
     res = a * b
 elif znak == '/':
     if b == 0:
-          print("Неможна поділити на нуль")
-          res = None
+        print("Неможна поділити на нуль")
+        res = None
     else:
-           res = a / b
+        res = a / b
 if res is not None:
     print("Буде:", res)
 
