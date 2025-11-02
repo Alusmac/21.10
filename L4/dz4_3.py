@@ -4,8 +4,8 @@
 
 import random
 
-num = [random.randint(1, 10) for _ in range(random.randint(3, 10))]
-print("Cтворюємо випадковий список:", num)
+lst = [random.randint(1, 10) for _ in range(random.randint(3, 10))]
+print("Cтворюємо випадковий список:", lst)
 
-my_lst = [num[0], num[2], num[-2]]
+my_lst = [lst[0], lst[2], lst[-2]]
 print("Створюємо інший список з 3 елементів зі списку:", my_lst)
