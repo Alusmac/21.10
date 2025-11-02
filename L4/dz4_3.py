@@ -8,4 +8,4 @@ lst = [random.randint(1, 10) for _ in range(random.randint(3, 10))]
 print("Cтворюємо випадковий список:", lst)
 
 my_lst = [lst[0], lst[2], lst[-2]]
-print("Створюємо інший список з 3 елементів зі списку:", my_lst)
+print("Створюємо список з 3 елементів зі списку:", my_lst)
