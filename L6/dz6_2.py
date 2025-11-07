@@ -18,6 +18,5 @@ elif days % 10 in (2, 3, 4) and not (12 <= days % 100 <= 14):
     day_word = "дні"
 else:
     day_word = "днів"
-
 # Форматування виводу
 print(f"{days} {day_word}, {str(hours).zfill(2)}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}")
