@@ -12,10 +12,10 @@
 # значеннями, скільки разів кожнє слово зустрічаються у орігінальному тексті.
 def popular_words(text, words):
     text_words = text.lower().split()
-    res = {}
+    result = {}
     for w in words:
-        res[w] = text_words.count(w)
-    return res
+        result[w] = text_words.count(w)
+    return result
 
 
 assert popular_words(

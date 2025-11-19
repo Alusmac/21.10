@@ -14,7 +14,7 @@ def difference(*args):
     numbers = sorted(args)
     return round(numbers[-1] - numners[0], 2)
 
-    # def difference(*args): # або ще можна таким варіантом
+    # def difference(*args): # або ще можна таким варіантом зробити
     if not args:
         return 0
     return round(max(args) - min(args), 2)
