@@ -5,8 +5,14 @@
 Нагадую, що вийти із генератора можна за допомогою return без параметрів."""
 
 
-def generate_cube_numbers(end):
-    pass
+def generate_cube_numbers(chislo):
+    n = 2
+    while True:
+        cube = n**3
+        if cube > chislo:
+            return
+        yield cube
+        n += 1
 
 
 from inspect import isgenerator

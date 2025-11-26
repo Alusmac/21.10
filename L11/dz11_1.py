@@ -1,4 +1,5 @@
-"""Напишіть функцію-генератор prime_generator, яка повертатиме прості числа.
+"""Напишіть функцію-генератор prime_generator, яка повертатиме прості
+числа.
 Верхня межа цього діапазону визначається параметром цієї функції.
 Наприклад, виклик функції
 list(prime_generator(10)) повинен відповідати послідовності з чисел [2, 3, 5, 7] .
@@ -6,8 +7,13 @@ list(prime_generator(10)) повинен відповідати послідов
 потрапляє в цей ряд"""
 
 
-def prime_generator(end):
-    pass
+def prime_generator(n):
+    for i in range(2, n + 1):
+        for a in range(2, int(i**0.5) + 1):
+            if i % a == 0:
+                break
+        else:
+            yield i
 
 
 from inspect import isgenerator
